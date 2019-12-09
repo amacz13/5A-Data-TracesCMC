@@ -1,12 +1,14 @@
 public class ConnexionInfos {
 
     public String user;
+    public String date;
     private int readActivity = 0;
     private int writeActivity = 0;
     private int totalActivity = 0;
 
-    public ConnexionInfos(String username){
+    public ConnexionInfos(String username, String date){
         this.user = username;
+        this.date = date;
     }
 
     public int getReadActivity() {
