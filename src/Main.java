@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
-        File xmlFile = new File("D:\\Téléchargements\\SortieXML.xml");
+        File xmlFile = new File("input.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
         Document doc = dBuilder.parse(xmlFile);
@@ -81,8 +81,8 @@ public class Main {
                 bw.newLine();
             }
         }
-        bw.flush();
-        bw.close();
+
+        System.out.println("File output : results.csv");
     }
 
 }
